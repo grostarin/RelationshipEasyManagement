@@ -1,0 +1,15 @@
+<?php
+
+$s_plugin_RelationshipEasyManagement_ = '';
+$s_plugin_RelationshipEasyManagement_title = 'Relationship easy management';
+$s_plugin_RelationshipEasyManagement_description = 'Add functionnalities to manage relationship between bugs easily.';
+$s_plugin_RelationshipEasyManagement_config_title = 'Configuration';
+$s_plugin_RelationshipEasyManagement_bug_id = 'Bug ID';
+$s_plugin_RelationshipEasyManagement_find_bug = "Find bug";
+$s_plugin_RelationshipEasyManagement_view_master_bug_link = "See master bug";
+$s_plugin_RelationshipEasyManagement_search_limit = "Search limit";
+$s_plugin_RelationshipEasyManagement_bug_report_mandatory_attribute_missing_alert = "Some mandatory attribute is missing...";
+$s_plugin_RelationshipEasyManagement_relationship_easy_management_bug_id = "Id : ";
+$s_plugin_RelationshipEasyManagement_relationship_easy_management_new_bug = "Add : ";
+$s_plugin_RelationshipEasyManagement_relationship_easy_management_search_bug = "Search : ";
+$s_plugin_RelationshipEasyManagement_no_search_result = "No search result";

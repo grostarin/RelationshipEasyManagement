@@ -1,0 +1,16 @@
+<?php
+
+$s_plugin_RelationshipEasyManagement_ = '';
+$s_plugin_RelationshipEasyManagement_title = 'Gestion facile des relations';
+$s_plugin_RelationshipEasyManagement_description = 'Ajoute des fonctionnalités pour gérer les relations entre demandes facilement.';
+$s_plugin_RelationshipEasyManagement_config_title = 'Configuration';
+$s_plugin_RelationshipEasyManagement_bug_id = 'ID de la demande';
+$s_plugin_RelationshipEasyManagement_find_bug = "Rechercher une demande";
+$s_plugin_RelationshipEasyManagement_view_master_bug_link = "Voir la demande parente";
+$s_plugin_RelationshipEasyManagement_search_limit = "Limite de recherche";
+$s_plugin_RelationshipEasyManagement_bug_report_mandatory_attribute_missing_alert = "Il manque au moins un attribute obligatoire...";
+$s_plugin_RelationshipEasyManagement_relationship_easy_management_bug_id = "Identifiant : ";
+$s_plugin_RelationshipEasyManagement_relationship_easy_management_new_bug = "Ajouter : ";
+$s_plugin_RelationshipEasyManagement_relationship_easy_management_search_bug = "Rechercher : ";
+$s_plugin_RelationshipEasyManagement_no_search_result = "Pas de demande correspondant";
+

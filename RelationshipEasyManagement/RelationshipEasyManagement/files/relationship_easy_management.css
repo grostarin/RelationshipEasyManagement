@@ -1,0 +1,82 @@
+#relationship_easy_management_search_field {
+	display:inline;
+}
+
+#relationship_easy_management_ajax_loader {
+	display: inline-block;
+	background-image: url("plugins/RelationshipEasyManagement/images/loading.gif");
+	background-position:top right;
+	background-size: 16px 16px;
+	background-repeat:no-repeat;
+	width: 16px;
+	height: 16px;
+	padding: 0 0 0 0px;
+	border:0;
+	margin-left: 3px;
+	margin-right: 3px;
+	vertical-align: middle;
+
+}
+
+#relationship_easy_management_search_result {
+	display: block;
+	width: 100%;
+	padding: 0 0 0 0px;
+	border:0;
+	margin-left: 3px;
+	margin-right: 3px;
+}
+
+#relationship_easy_management_search_result table {
+	width: 100%;
+	margin: 2px;
+}
+
+#relationship_easy_management_search_result table td:first-child {
+	padding: 2px;
+	border-width:1px;
+	border-color: gray;
+	border-style: dotted;
+}
+
+.relationship_easy_management_copy_id_button {
+	display:inline-block;
+	background-image: url("plugins/RelationshipEasyManagement/images/arrow-round.png");
+	background-position:top right;
+	background-size: 32px 32px;
+	background-repeat:no-repeat;
+	width: 32px;
+	height: 32px;
+	padding: 0 0 0 0px;
+	border:0;
+	cursor: pointer;
+}
+
+#relationship_easy_management_new_bug_tr {
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+#relationship_easy_management_new_bug_button {
+	display: inline-block;
+	vertical-align: middle;
+	background-image: url("plugins/RelationshipEasyManagement/images/add-item.png");
+	background-position:top right;
+	background-size: 32px 32px;
+	background-repeat:no-repeat;
+	width: 32px;
+	height: 32px;
+	padding: 0 0 0 0px;
+	border:0;
+	cursor: pointer;
+}
+
+
+#relationship_easy_management_div {
+	display: inline-block;
+	vertical-align: middle;
+	border-left-style:dotted;
+	border-left-width:2px;
+	border-left-color: black;
+}
