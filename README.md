@@ -1,7 +1,5 @@
 # RelationshipEasyManagement
 
-Copyright (c) 2016  Julien Schneider
-
 Released under the [MIT license](http://opensource.org/licenses/MIT)
 
 Add functionnalities to mantis in order to manage relationship between bugs easily.
