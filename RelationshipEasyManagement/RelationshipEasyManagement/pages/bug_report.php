@@ -46,8 +46,13 @@
 
 	access_ensure_project_level( config_get('report_bug_threshold' ) );
 
+	$f_project_id	= gpc_get_string( 'project_id', '0' );
+	$t_project = explode( ';', $f_project_id );
+	$t_project_top     = $t_project[0];
+	$t_project_bottom  = $t_project[ count( $t_project ) - 1 ];
+	
 	$t_bug_data = new BugData;
-	$t_bug_data->project_id             = gpc_get_int( 'project_id', 0);;
+	$t_bug_data->project_id             = $t_project_bottom;
 	$t_bug_data->reporter_id            = auth_get_current_user_id();
 	$t_bug_data->build                  = gpc_get_string( 'build', '' );
 	$t_bug_data->platform               = gpc_get_string( 'platform', '' );

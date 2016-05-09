@@ -48,12 +48,15 @@ if (bug_is_readonly ( $f_master_bug_id )) {
 	trigger_error ( ERROR_BUG_READ_ONLY_ACTION_DENIED, ERROR );
 }
 
-$f_new_relationship_bug = gpc_get_bool ( 'new_relationship_bug', false );
 $t_bug = bug_get ( $f_master_bug_id, true );
 
-$f_project_id = gpc_get_int ( 'project_id', 0 );
-if ($f_project_id > 0)
-	$t_project_id = $f_project_id;
+$f_project_id	= gpc_get_string( 'project_id', '0' );
+$t_project = explode( ';', $f_project_id );
+$t_project_top     = $t_project[0];
+$t_project_bottom  = $t_project[ count( $t_project ) - 1 ];
+
+if ($t_project_bottom > 0)
+	$t_project_id = $t_project_bottom;
 else
 	$t_project_id = $t_bug->project_id;
 	
@@ -149,7 +152,7 @@ print_recently_visited ();
 					<select
 					name="project_id"
 					onchange="document.relationship_easy_management_report_bug_form.action='plugin.php?page=RelationshipEasyManagement/bug_report_page.php';document.relationship_easy_management_report_bug_form.submit();">
-			<?php print_project_option_list( $t_project_id, false, null, true )?>
+			<?php print_project_option_list( $f_project_id, false, null, true )?>
 			</select></td>
 	</tr>
 <?php
@@ -171,7 +174,7 @@ if ($tpl_show_category) {
 					value="<?php echo $m_rel_type; ?>" />
 				<?php
 	relationship_list_box ( relationship_get_complementary_type ( $m_rel_type ), "rel_type", false, true );
-	echo "<b> [" . project_get_name ( $f_master_bug->project_id ) . "] - " . $f_master_bug->id . " - " . $f_master_bug->description . '</b>';
+	echo "<b> [" . project_get_name ( $f_master_bug->project_id ) . "] - " . $f_master_bug->id . " - " . $f_master_bug->summary . '</b>';
 	?>			
 		</td>
 			</tr>
