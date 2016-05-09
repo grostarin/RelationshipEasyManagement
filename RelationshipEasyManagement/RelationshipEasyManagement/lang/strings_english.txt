@@ -13,3 +13,4 @@ $s_plugin_RelationshipEasyManagement_relationship_easy_management_bug_id = "Id :
 $s_plugin_RelationshipEasyManagement_relationship_easy_management_new_bug = "Add : ";
 $s_plugin_RelationshipEasyManagement_relationship_easy_management_search_bug = "Search : ";
 $s_plugin_RelationshipEasyManagement_no_search_result = "No search result";
+$s_plugin_RelationshipEasyManagement_not_displayed_result = "%1s not displayed result (%2s max results)";

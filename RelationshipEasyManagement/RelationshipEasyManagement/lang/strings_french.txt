@@ -12,5 +12,5 @@ $s_plugin_RelationshipEasyManagement_bug_report_mandatory_attribute_missing_aler
 $s_plugin_RelationshipEasyManagement_relationship_easy_management_bug_id = "Identifiant : ";
 $s_plugin_RelationshipEasyManagement_relationship_easy_management_new_bug = "Ajouter : ";
 $s_plugin_RelationshipEasyManagement_relationship_easy_management_search_bug = "Rechercher : ";
-$s_plugin_RelationshipEasyManagement_no_search_result = "Pas de demande correspondant";
-
+$s_plugin_RelationshipEasyManagement_no_search_result = "Pas de demande correspondant � la recherche.";
+$s_plugin_RelationshipEasyManagement_not_displayed_result = "%1s demandes non affichées (%2s résultats maximum).";
