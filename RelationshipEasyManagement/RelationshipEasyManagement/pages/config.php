@@ -26,7 +26,7 @@ print_manage_menu();
 			?>
 		</td>
 		<td width="70%">
-			<input type="text" name="help_url" size="2" maxlength="2" value="<?php echo plugin_config_get("search_limit"); ?>" />
+			<input type="text" name="search_limit" size="2" maxlength="2" value="<?php echo plugin_config_get("search_limit"); ?>" />
 		</td>
 	</tr>
 
