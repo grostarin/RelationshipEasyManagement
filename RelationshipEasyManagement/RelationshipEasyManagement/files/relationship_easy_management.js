@@ -49,6 +49,13 @@ jQuery(document).ready(function($) {
 					relationship_easy_management_search_result = $('div[id="relationship_easy_management_search_result"]');
 					relationship_easy_management_search_result.html(data);
 					relationship_easy_management_search_result.slideDown("fast");
+				},
+				error : function(data){
+					relationship_easy_management_search_result = $('div[id="relationship_easy_management_search_result"]');
+					relationship_easy_management_search_result.html("ERROR");
+					relationship_easy_management_search_result.slideDown("fast");
+				},
+				complete : function(data){
 					relationship_easy_management_ajax_loader.hide();
 				}
 			});
