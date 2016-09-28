@@ -155,14 +155,7 @@ print_recently_visited ();
 			<?php print_project_option_list( $f_project_id, false, null, true )?>
 			</select></td>
 	</tr>
-<?php
 
-event_signal ( 'EVENT_REPORT_BUG_FORM_TOP', array (
-		$t_project_id 
-) );
-
-if ($tpl_show_category) {
-	?>
 	<tr <?php echo helper_alternate_class() ?>>
 				<td class="category"><span class="required">*</span><?php echo lang_get( 'relationship_with_parent' )?>
 		</td>
@@ -177,8 +170,15 @@ if ($tpl_show_category) {
 	echo "<b> [" . project_get_name ( $f_master_bug->project_id ) . "] - " . $f_master_bug->id . " - " . $f_master_bug->summary . '</b>';
 	?>			
 		</td>
-			</tr>
+	</tr>
+	
+<?php
+event_signal ( 'EVENT_REPORT_BUG_FORM_TOP', array (
+		$t_project_id 
+) );
 
+if ($tpl_show_category) {
+	?>
 			<tr <?php echo helper_alternate_class() ?>>
 				<td class="category" width="30%">
 			<?php echo config_get( 'allow_no_category' ) ? '' : '<span class="required">*</span>'; print_documentation_link( 'category' )?>
