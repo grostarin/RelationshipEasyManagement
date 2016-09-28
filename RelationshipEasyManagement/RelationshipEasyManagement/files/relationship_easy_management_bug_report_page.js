@@ -5,7 +5,7 @@ jQuery(document).ready(function($) {
 		project_id = $('select[name="project_id"]').val();
 		summary = $('input[name="summary"]').val().trim();
 		description = $('textarea[name="description"]').val().trim();		
-		if(rel_type==-2 || category_id==0 || project_id==0 || summary=='' || description==''){
+		if(rel_type==-2 || project_id==0 || summary=='' || description==''){
 			alert(bug_report_mandatory_attribute_missing_alert);
 			return;
 		}
