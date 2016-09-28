@@ -566,7 +566,8 @@ if ($tpl_show_view_state) {
 				</td>
 				<td class="center"><input <?php echo helper_get_tab_index()?>
 					class="button" id="relationship_easy_management_new_bug_post_button"
-					value="<?php echo lang_get( 'submit_report_button' ) ?>" /></td>
+					value="<?php echo lang_get( 'submit_report_button' ) ?>"
+					type="button"/></td>
 			</tr>
 		</table>
 	</form>
